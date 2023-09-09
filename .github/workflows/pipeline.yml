@@ -6,7 +6,7 @@ on:
       - main
 
 jobs:
-  deploy:
+  lint:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -19,10 +19,59 @@ jobs:
         run: npm ci
       - name: Lint execution
         run: npm run lint
-      - name: Testing
-        run: npm run test-headless
+
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 18
+      - name: Install node dependencies
+        run: npm ci
       - name: Build Project
         run: npm run build
+      - name: Upload dist folder
+        uses: actions/upload-artifact@v2
+        with:
+          name: dist
+          path: dist
+
+  test:
+    needs: [lint, build]
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+      with:
+        fetch-depth: 0
+    - uses: actions/setup-node@v3
+      with:
+        node-version: 18
+    - name: Install node dependencies
+      run: npm ci
+    - name: Download dist folder
+      uses: actions/download-artifact@v2
+      with:
+        name: dist
+        path: dist
+    - name: Testing
+      run: npm run test-headless
+
+
+  deploy:
+    needs: [test]
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 18
+      - name: TODO implementation
+        run: echo "Deployyyy"
 
 
 
