@@ -1,4 +1,4 @@
-[![Deployment Pipeline](https://github.com/ApeWithGlasses/ApeWithGlasses.github.io/actions/workflows/pipeline.yml/badge.svg)](https://github.com/ApeWithGlasses/ApeWithGlasses.github.io/actions/workflows/pipeline.yml)
+[![Deploy](https://github.com/ApeWithGlasses/ApeWithGlasses.github.io/actions/workflows/pipeline.yml/badge.svg)](https://github.com/ApeWithGlasses/ApeWithGlasses.github.io/actions/workflows/pipeline.yml)
 
 # PersonalPortafolio
 
