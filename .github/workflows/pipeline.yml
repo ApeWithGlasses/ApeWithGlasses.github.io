@@ -89,6 +89,6 @@ jobs:
         id: deployment
         uses: actions/deploy-pages@v2
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          github_token: ${{ github.token }}
           publish_dir: ./dist/personal-portafolio
           branch: gh-pages
