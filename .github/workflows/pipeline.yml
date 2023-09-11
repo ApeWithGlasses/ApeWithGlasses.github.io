@@ -85,10 +85,6 @@ jobs:
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0
-      - uses: actions/setup-node@v3
-        with:
-          cache: 'npm'
-          node-version: 18
       - name: TODO implementation
         run: echo "Deployyyy"
 
