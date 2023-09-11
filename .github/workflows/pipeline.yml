@@ -85,6 +85,11 @@ jobs:
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0
+      - name: Download dist folder
+        uses: actions/download-artifact@v3
+        with:
+          name: dist
+          path: dist
       - name: Deploy to GitHub Pages
         id: deployment
         uses: peaceiris/actions-gh-pages@v4
