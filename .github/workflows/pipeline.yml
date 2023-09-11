@@ -6,7 +6,7 @@ on:
       - main
 
 jobs:
-  lint:
+  install-dependencies:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -14,6 +14,21 @@ jobs:
           fetch-depth: 0
       - uses: actions/setup-node@v3
         with:
+          cache: 'npm'
+          node-version: 18
+      - name: Install node dependencies
+        run: npm ci
+
+  lint:
+    needs: install-dependencies
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v3
+        with:
+          cache: 'npm'
           node-version: 18
       - name: Install node dependencies
         run: npm ci
@@ -21,6 +36,7 @@ jobs:
         run: npm run lint
 
   build:
+    needs: install-dependencies
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -28,6 +44,7 @@ jobs:
           fetch-depth: 0
       - uses: actions/setup-node@v3
         with:
+          cache: 'npm'
           node-version: 18
       - name: Install node dependencies
         run: npm ci
@@ -48,6 +65,7 @@ jobs:
         fetch-depth: 0
     - uses: actions/setup-node@v3
       with:
+        cache: 'npm'
         node-version: 18
     - name: Install node dependencies
       run: npm ci
@@ -69,6 +87,7 @@ jobs:
           fetch-depth: 0
       - uses: actions/setup-node@v3
         with:
+          cache: 'npm'
           node-version: 18
       - name: TODO implementation
         run: echo "Deployyyy"
