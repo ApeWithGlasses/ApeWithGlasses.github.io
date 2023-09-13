@@ -7,8 +7,8 @@
     "build": "ng build",
     "build:prod": "ng build --configuration production",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test",
-    "test-headless": "ng test --browsers=ChromeHeadless --watch=false",
+    "test": "ng test --browsers=Firefox",
+    "test:headless": "ng test --browsers=FirefoxHeadless --watch=false",
     "lint": "ng lint"
   },
   "private": true,

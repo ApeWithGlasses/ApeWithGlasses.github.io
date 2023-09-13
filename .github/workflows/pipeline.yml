@@ -75,7 +75,7 @@ jobs:
         name: dist
         path: dist
     - name: Testing
-      run: npm run test-headless
+      run: npm run test:headless
 
 
   deploy:
