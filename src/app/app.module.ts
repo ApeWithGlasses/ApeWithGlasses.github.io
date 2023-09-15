@@ -18,13 +18,12 @@ import { HomeComponent } from './feature/components/home/home.component';
     AboutMeComponent,
     WorksComponent,
     ContactComponent,
-    HomeComponent
+    HomeComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
