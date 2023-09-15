@@ -1,0 +1,27 @@
+.contact__info {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid var(--secondary);
+  border-radius: 24px;
+  padding-top: 2rem;
+  padding-bottom: 0;
+  h3 {
+    margin: 1rem 0;
+  }
+  .contact__notice {
+    text-align: center;
+    width: 100%;
+    margin-top: 2rem;
+    background: var(--primary);
+    border-top: 1px solid var(--secondary);
+    border-bottom-left-radius: 24px;
+    border-bottom-right-radius: 24px;
+    p {
+      margin: 0;
+      color: var();
+    }
+  }
+}

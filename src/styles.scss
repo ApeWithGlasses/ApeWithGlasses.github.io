@@ -56,6 +56,10 @@ body {
   background: var(--background-color);
 }
 
+button {
+  font-family: 'Poppins', sans-serif;
+}
+
 p {
   margin-bottom: 1rem;
 }
@@ -129,6 +133,20 @@ footer {
   display: flex;
   align-items: center;
   gap: 4px;
+  &:hover {
+    background-color: var(--secondary);
+  }
+}
+
+.primary__btn {
+  background-color: var(--color);
+  color: var(--font-color);
+  font-size: larger;
+  padding: 1rem 3rem;
+  border: none;
+  border-radius: 24px;
+  cursor: pointer;
+  transition: all 200ms ease-in-out;
   &:hover {
     background-color: var(--secondary);
   }
