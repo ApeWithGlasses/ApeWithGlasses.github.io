@@ -30,9 +30,10 @@
   --background-color: #0F0F0F;
   --font-color: #FFFFFF;
   --icon-color: #292929;
-  --color: #7263A6;
+  --color: #701ea7;
   --primary: #1A1A1A;
   --secondary: #333333;
+  --light-gray: #4A4A4A;
 }
 
 * {
@@ -165,5 +166,116 @@ footer {
   border-style: solid;
   &:hover {
     background-color: var(--secondary);
+  }
+}
+
+.minimal__card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background: var(--primary);
+  border-color: var(--secondary);
+  border-top-width: 1px;
+  border-bottom-width: 0;
+  border-left-width: 0;
+  border-right-width: 0;
+  border-style: solid;
+  border-radius: 24px;
+  padding: 2rem;
+  width: auto;
+  h1 {
+    margin: 1rem 0;
+  }
+  .icon__card {
+    width: 40px!important;
+    height: 40px!important;
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    transform: rotate(180deg);
+    transition: all 200ms ease-in-out;
+  }
+  &:hover .icon__card {
+    transform: rotate(180deg) translateX(5px);
+  }
+}
+
+.minimal__card--little {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--primary);
+  border-color: var(--secondary);
+  border-top-width: 1px;
+  border-bottom-width: 0;
+  border-left-width: 0;
+  border-right-width: 0;
+  border-style: solid;
+  border-radius: 24px;
+  padding: 2rem;
+  width: auto;
+  h3 {
+    margin: 0;
+    &:first-of-type {
+      color: var(--light-gray);
+    }
+  }
+  .icon__card {
+      width: 60px !important;
+      height: 60px !important;
+      right: 2rem;
+      transition: all 200ms ease-in-out;
+    }
+    &:hover .icon__card {
+      transform: translateX(-5px);
+    }
+}
+
+.social {
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background: var(--primary);
+  border-color: var(--secondary);
+  border-top-width: 1px;
+  border-bottom-width: 0;
+  border-left-width: 0;
+  border-right-width: 0;
+  border-style: solid;
+  border-radius: 24px;
+  padding: 2rem;
+  width: auto;
+  svg {
+    transition: all 200ms ease-in-out;
+  }
+  &:hover svg {
+    stroke: var(--font-color);
+  }
+}
+
+.minimal__card--centered {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background: var(--primary);
+  border-color: var(--secondary);
+  border-top-width: 1px;
+  border-bottom-width: 0;
+  border-left-width: 0;
+  border-right-width: 0;
+  border-style: solid;
+  border-radius: 24px;
+  padding: 2rem;
+  width: auto;
+  h1 {
+    margin: 1rem 0;
+  }
+  .icon__card {
+    width: 55px !important;
+    height: 55px !important;
+    margin: 0 auto;
   }
 }

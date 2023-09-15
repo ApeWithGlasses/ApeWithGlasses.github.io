@@ -1,0 +1,58 @@
+.home {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, auto);
+  grid-template-areas:
+    "profile title contact"
+    "profile socials contact"
+    "profile country contact";
+  .minimal__card {
+    img {
+      width: 90px;
+      height: 9 0px;
+      border-radius: 50%;
+    }
+
+    small {
+      color: var(--light-gray);
+
+      img {
+        width: 12px;
+        height: 12px;
+      }
+    }
+  }
+  .profile {
+    grid-area: profile;
+  }
+  .title {
+    grid-area: title;
+  }
+  .socials {
+    grid-area: socials;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(3, 1fr);
+    .social {
+      transition: all 200ms ease-in-out;
+      &:hover {
+        &:nth-child(1) {
+          background: #8a3ab9;
+        }
+        &:nth-child(2) {
+          background: #2dba4e;
+        }
+        &:nth-child(3) {
+          background: #0077B5;
+        }
+      }
+    }
+  }
+  .country {
+    grid-area: country;
+  }
+  .contact {
+    grid-area: contact;
+  }
+}
