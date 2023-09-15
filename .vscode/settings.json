@@ -1,5 +1,6 @@
 {
     "conventionalCommits.scopes": [
-        "about me"
+        "about me",
+        "app component"
     ]
 }
