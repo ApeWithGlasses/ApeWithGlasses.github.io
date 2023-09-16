@@ -1,0 +1,15 @@
+<section class="tools" id="tools">
+  <div class="tools__section">
+    <img src="../../../../assets/icons/cube-3d.png" alt="cube">
+    <h5>TOOLS</h5>
+    <h1>Tools & Software</h1>
+    <div class="tools__container">
+      <div *ngFor="let tool of tools" class="tool">
+        <img loading="lazy" [src]="tool.img" alt="tool">
+        <div class="dialog__box">
+          <p>{{ tool.title }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
