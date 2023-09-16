@@ -26,7 +26,7 @@ export class ToolsComponent {
     },
     {
       img: 'https://i.imgur.com/cUkfOIF.png',
-      title: 'GActions',
+      title: 'GhActions',
     },
     {
       img: 'https://i.imgur.com/KCZ5aPM.png',
