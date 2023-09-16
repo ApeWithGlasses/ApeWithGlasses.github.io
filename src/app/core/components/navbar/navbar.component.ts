@@ -6,5 +6,19 @@ import { Component } from '@angular/core';
   styleUrls: ['./navbar.component.scss']
 })
 export class NavbarComponent {
+  toHome() {
+    document.getElementById('home')?.scrollIntoView({ behavior: 'smooth' });
+  }
 
+  toAbout() {
+    document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' });
+  }
+
+  toWorks() {
+    document.getElementById('works')?.scrollIntoView({ behavior: 'smooth' });
+  }
+
+  toContact() {
+    document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
+  }
 }
