@@ -6,11 +6,22 @@ import { FooterComponent } from './core/components/footer/footer.component';
 import { ContactComponent } from './core/components/contact/contact.component';
 import { HomeComponent } from './feature/components/home/home.component';
 import { AboutMeComponent } from './feature/components/about-me/about-me.component';
+import { WorksComponent } from './feature/components/works/works.component';
+import { ToolsComponent } from './feature/components/tools/tools.component';
 
 describe('AppComponent', () => {
   beforeEach(() => TestBed.configureTestingModule({
     imports: [RouterTestingModule],
-    declarations: [AppComponent, NavbarComponent, FooterComponent, ContactComponent, HomeComponent, AboutMeComponent]
+    declarations: [
+      AppComponent,
+      NavbarComponent,
+      FooterComponent,
+      ContactComponent,
+      HomeComponent,
+      AboutMeComponent,
+      WorksComponent,
+      ToolsComponent
+    ]
   }));
 
   it('should create the app', () => {

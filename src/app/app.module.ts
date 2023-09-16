@@ -9,6 +9,7 @@ import { AboutMeComponent } from './feature/components/about-me/about-me.compone
 import { WorksComponent } from './feature/components/works/works.component';
 import { ContactComponent } from './core/components/contact/contact.component';
 import { HomeComponent } from './feature/components/home/home.component';
+import { ToolsComponent } from './feature/components/tools/tools.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import { HomeComponent } from './feature/components/home/home.component';
     WorksComponent,
     ContactComponent,
     HomeComponent,
+    ToolsComponent
   ],
   imports: [
     BrowserModule,
