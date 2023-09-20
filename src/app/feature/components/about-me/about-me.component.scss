@@ -66,3 +66,21 @@
     }
   }
 }
+
+@media all and (max-width: 920px) {
+  .about {
+    .about-me {
+      section {
+        width: 100%;
+        flex-direction: column;
+        text-align: center;
+        .portrait {
+          margin: 0 auto;
+        }
+        p {
+          max-width: 600px;
+        }
+      }
+    }
+  }
+}

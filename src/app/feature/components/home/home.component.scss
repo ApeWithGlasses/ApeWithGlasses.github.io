@@ -57,3 +57,16 @@
     grid-area: contact;
   }
 }
+
+@media all and (max-width: 920px) {
+  .home {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(6, auto);
+    grid-template-areas:
+      "profile"
+      "title"
+      "socials"
+      "country"
+      "contact";
+  }
+}

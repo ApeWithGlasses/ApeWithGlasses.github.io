@@ -40,6 +40,10 @@
       }
     }
 
+    .menu__btn {
+      display: none;
+    }
+
     .navbar__links {
       display: flex;
       gap: 10px;
@@ -47,6 +51,16 @@
       a {
         font-weight: 500;
         color: #FFFFFF;
+      }
+    }
+  }
+}
+
+@media all and (max-width: 768px) {
+  .navbar {
+    .navbar__content {
+      .navbar__links {
+        display: none;
       }
     }
   }

@@ -277,3 +277,25 @@ footer {
     margin: 0 auto;
   }
 }
+
+@media all and (min-width: 0px) and (max-width: 1280px) {
+  main {
+    padding: 0.7rem;
+  }
+  footer {
+    padding: 0.7rem;
+  }
+  .works {
+    .works__section {
+      .works__section--grid {
+        grid-template-columns: repeat(1, 1fr);
+
+        .card {
+          .light__circle {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}

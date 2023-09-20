@@ -90,3 +90,18 @@
     }
   }
 }
+
+@media all and (max-width: 920px) {
+  .works {
+    .works__section {
+      .works__section--grid {
+        grid-template-columns: repeat(1, 1fr);
+        .card {
+          .light__circle {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}
