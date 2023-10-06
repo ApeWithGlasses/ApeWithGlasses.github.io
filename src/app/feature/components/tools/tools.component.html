@@ -5,7 +5,7 @@
     <h1>Tools & Software</h1>
     <div class="tools__container">
       <div *ngFor="let tool of tools" class="tool">
-        <img loading="lazy" [src]="tool.img" alt="tool">
+        <img [src]="tool.img" alt="tool">
         <div class="dialog__box">
           <p>{{ tool.title }}</p>
         </div>

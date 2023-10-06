@@ -37,7 +37,7 @@ export class ToolsComponent {
       title: 'Figma',
     },
     {
-      img: 'https://i.imgur.com/x2xynWd.png',
+      img: 'https://i.imgur.com/idH5tn5.png',
       title: 'Wordpress',
     },
   ];
