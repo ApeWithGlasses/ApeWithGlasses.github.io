@@ -93,8 +93,6 @@ jobs:
         run: npm ci
       - name: Build Project
         run: npm run build:prod
-      - name: Rename index file
-        run: mv dist/personal-portafolio/index.html dist/personal-portafolio/404.html
       - name: Deploy to github pages 🚀
         uses: JamesIves/github-pages-deploy-action@v4
         with:
