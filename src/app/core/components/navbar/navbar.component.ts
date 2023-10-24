@@ -18,7 +18,7 @@ export class NavbarComponent {
     document.getElementById('works')?.scrollIntoView({ behavior: 'smooth' });
   }
 
-  toContact() {
-    document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
+  toSkills() {
+    document.getElementById('tools')?.scrollIntoView({ behavior: 'smooth' });
   }
 }

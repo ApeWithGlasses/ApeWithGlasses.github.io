@@ -11,34 +11,42 @@ export class ToolsComponent {
     {
       img: 'https://i.imgur.com/HpuPfxj.png',
       title: 'Java',
+      altText: 'Java Icon',
     },
     {
       img: 'https://i.imgur.com/P86QzA1.png',
       title: 'Spring',
+      altText: 'Spring Icon',
     },
     {
       img: 'https://i.imgur.com/hAkip04.png',
       title: 'Angular',
+      altText: 'Angular Icon',
     },
     {
       img: 'https://i.imgur.com/hSEOLcB.png',
       title: 'Jenkins',
+      altText: 'Jenkins Icon',
     },
     {
       img: 'https://i.imgur.com/cUkfOIF.png',
       title: 'GhActions',
+      altText: 'Github Actions Icon',
     },
     {
       img: 'https://i.imgur.com/KCZ5aPM.png',
       title: 'React',
+      altText: 'React Icon',
     },
     {
       img: 'https://i.imgur.com/Jn6VKYf.png',
       title: 'Figma',
+      altText: 'Figma Icon',
     },
     {
       img: 'https://i.imgur.com/idH5tn5.png',
       title: 'Wordpress',
+      altText: 'Wordpress Icon',
     },
   ];
 }

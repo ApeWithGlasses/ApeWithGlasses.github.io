@@ -4,4 +4,5 @@ export interface Works {
   desc: string;
   img: string;
   imgId: string;
+  altText: string;
 }

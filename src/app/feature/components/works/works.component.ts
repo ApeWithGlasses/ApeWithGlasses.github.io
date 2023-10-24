@@ -14,6 +14,7 @@ export class WorksComponent {
       desc: 'AI generated modern art.',
       img: 'https://i.imgur.com/jkjyTEG.png',
       imgId: 'modernartdotcom',
+      altText: 'ModernArtDotCom Banner',
     },
     {
       title: 'CodeToImage',
@@ -21,6 +22,7 @@ export class WorksComponent {
       desc: 'Convert your code into beautiful images.',
       img: 'https://i.imgur.com/xYUfAmq.png',
       imgId: 'codetoimage',
+      altText: 'CodeToImage Banner',
     },
   ];
 }

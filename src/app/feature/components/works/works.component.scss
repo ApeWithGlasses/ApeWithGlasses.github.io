@@ -20,14 +20,15 @@
       height: 60px;
       margin: 0 auto;
     }
-    h5 {
-      margin: 1rem 0;
-      color: var(--secondary);
-    }
     h1 {
       margin: 0;
     }
     .works__section--grid {
+      a {
+        p {
+          color: #9c9c9c;
+        }
+      }
       margin-top: 2rem;
       display: grid;
       grid-template-columns: repeat(2, 1fr);
@@ -41,16 +42,16 @@
         padding: 2rem 1rem;
         background: var(--primary);
         border-radius: 24px;
-        border-color: var(--secondary);
+        border-color: #484848;
         border-top-width: 1px;
         border-bottom-width: 0;
         border-left-width: 0;
         border-right-width: 0;
         border-style: solid;
         p {
-          color: var(--light-gray);
+          color: #9c9c9c;
         }
-        h4, p {
+        .title, p {
           text-align: start;
         }
         img {

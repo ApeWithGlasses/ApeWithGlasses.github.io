@@ -36,7 +36,7 @@
   --icon-color: #292929;
   --color: #701ea7;
   --primary: #1A1A1A;
-  --secondary: #333333;
+  --secondary: #7b7b7b;
   --light-gray: #4A4A4A;
 }
 
@@ -127,6 +127,34 @@ footer {
   left: 0;
 }
 
+.title {
+  font-size: 1.44rem;
+  font-weight: 500;
+  line-height: 1.3;
+}
+
+.subtitle {
+  color: var(--secondary);
+  font-size: 1.2rem;
+  font-weight: 500;
+  line-height: 1.3;
+  margin: 1rem 0;
+}
+
+.subtitle-card {
+  font-size: 1.728rem;
+  line-height: 1.3;
+  font-weight: 500;
+  color: var(--secondary);
+}
+
+.title-card {
+  font-size: 1.728rem;
+  line-height: 1.3;
+  font-weight: 500;
+  color: var(--font-color);
+}
+
 .default__btn {
   width: fit-content;
   border-radius: 24px;
@@ -160,7 +188,7 @@ footer {
   border-radius: 24px;
   padding: 3px 10px;
   transition: all 200ms ease-in-out;
-  border-color: var(--secondary);
+  border-color: #424242;
   border-top-width: 1px;
   border-bottom-width: 0;
   border-left-width: 0;
@@ -176,7 +204,7 @@ footer {
   display: flex;
   flex-direction: column;
   background: var(--primary);
-  border-color: var(--secondary);
+  border-color: #424242;
   border-top-width: 1px;
   border-bottom-width: 0;
   border-left-width: 0;
@@ -208,7 +236,7 @@ footer {
   justify-content: space-between;
   align-items: center;
   background: var(--primary);
-  border-color: var(--secondary);
+  border-color: #484848;
   border-top-width: 1px;
   border-bottom-width: 0;
   border-left-width: 0;
@@ -217,12 +245,6 @@ footer {
   border-radius: 24px;
   padding: 2rem;
   width: auto;
-  h3 {
-    margin: 0;
-    &:first-of-type {
-      color: var(--light-gray);
-    }
-  }
   .icon__card {
       width: 60px !important;
       height: 60px !important;
@@ -241,7 +263,7 @@ footer {
   justify-content: center;
   align-items: center;
   background: var(--primary);
-  border-color: var(--secondary);
+  border-color: #424242;
   border-top-width: 1px;
   border-bottom-width: 0;
   border-left-width: 0;
@@ -263,7 +285,7 @@ footer {
   flex-direction: column;
   text-align: center;
   background: var(--primary);
-  border-color: var(--secondary);
+  border-color: #424242;
   border-top-width: 1px;
   border-bottom-width: 0;
   border-left-width: 0;

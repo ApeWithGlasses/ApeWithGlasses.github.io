@@ -7,7 +7,6 @@ import { NavbarComponent } from './core/components/navbar/navbar.component';
 import { FooterComponent } from './core/components/footer/footer.component';
 import { AboutMeComponent } from './feature/components/about-me/about-me.component';
 import { WorksComponent } from './feature/components/works/works.component';
-import { ContactComponent } from './core/components/contact/contact.component';
 import { HomeComponent } from './feature/components/home/home.component';
 import { ToolsComponent } from './feature/components/tools/tools.component';
 
@@ -18,7 +17,6 @@ import { ToolsComponent } from './feature/components/tools/tools.component';
     FooterComponent,
     AboutMeComponent,
     WorksComponent,
-    ContactComponent,
     HomeComponent,
     ToolsComponent
   ],
