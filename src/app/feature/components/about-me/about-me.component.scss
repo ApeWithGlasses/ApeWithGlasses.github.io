@@ -27,13 +27,8 @@
       flex-direction: row;
       margin: 0 auto;
       justify-content: center;
+      align-items: center;
       text-align: start;
-      div {
-        img {
-          width: 200px;
-          height: 200px;
-        }
-      }
       .portrait {
         position: relative;
         padding: 0.7rem 0.7rem 3rem 0.7rem;
