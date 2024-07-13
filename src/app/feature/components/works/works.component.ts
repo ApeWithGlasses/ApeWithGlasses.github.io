@@ -28,7 +28,7 @@ export class WorksComponent {
       title: 'FoodMe',
       url: 'https://foodme-platzi-three.vercel.app/',
       desc: 'Improved food delivery app.',
-      img: 'https://i.imgur.com/cl6VaLJ.png',
+      img: 'https://i.imgur.com/pu5tHTf.png',
       imgId: 'foodme',
       altText: 'FoodMe Banner',
     },
