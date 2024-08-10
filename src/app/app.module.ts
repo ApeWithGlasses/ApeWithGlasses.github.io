@@ -9,6 +9,7 @@ import { AboutMeComponent } from './feature/components/about-me/about-me.compone
 import { WorksComponent } from './feature/components/works/works.component';
 import { HomeComponent } from './feature/components/home/home.component';
 import { ToolsComponent } from './feature/components/tools/tools.component';
+import { ExperienceComponent } from './feature/components/experience/experience.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { ToolsComponent } from './feature/components/tools/tools.component';
     AboutMeComponent,
     WorksComponent,
     HomeComponent,
-    ToolsComponent
+    ToolsComponent,
+    ExperienceComponent
   ],
   imports: [
     BrowserModule,

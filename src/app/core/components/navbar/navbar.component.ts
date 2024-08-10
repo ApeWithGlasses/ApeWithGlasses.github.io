@@ -14,6 +14,10 @@ export class NavbarComponent {
     document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' });
   }
 
+  toExperience() {
+    document.getElementById('experience')?.scrollIntoView({ behavior: 'smooth' });
+  }
+
   toWorks() {
     document.getElementById('works')?.scrollIntoView({ behavior: 'smooth' });
   }

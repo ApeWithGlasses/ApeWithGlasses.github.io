@@ -1,0 +1,97 @@
+.experience {
+  position: relative;
+  padding-top: 90px;
+  margin-top: 5rem;
+  .experience__section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    img {
+      width: 60px;
+      height: 60px;
+      margin: 0 auto;
+    }
+
+    .experiences {
+      margin-top: 5rem;
+      place-content: center;
+      display: flex;
+      &::after {
+        content: '';
+        position: fixed;
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        pointer-events: none;
+        background: radial-gradient(circle, rgba(255, 255, 255, 0.4), rgba(0, 0, 0, 0));
+        transition: transform 0.1s, opacity 0.2s;
+        opacity: 0;
+        z-index: 9999;
+      }
+      &:hover::after {
+        opacity: 1;
+        transform: translate(-50%, -50%);
+      }
+      &:hover::after {
+        animation: glow-follow 0.1s infinite;
+      }
+      .card a {
+        cursor: pointer;
+        display: flex;
+        width: 900px;
+        border: none;
+        background-color: transparent;
+        gap: 2rem;
+        border-radius: 16px;
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(7.4px);
+        padding: 1rem;
+        border: 1px solid rgba(255, 255, 255, 0.03);
+        transition: all 300ms ease;
+        &:hover {
+          background: rgba(55, 55, 55, 0.22);
+          box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+          .content {
+            h5 {
+              color: var(--color);
+            }
+          }
+        }
+
+        .date {
+          color: var(--secondary);
+          width: 500px;
+        }
+
+        .content {
+          text-align: left;
+
+          h5 {
+            color: var(--font-color);
+            transition: all 300ms ease;
+          }
+
+          p {
+            margin-top: 1rem;
+            color: var(--secondary);
+            font-size: 14px;
+          }
+
+          .technologies {
+            display: flex;
+            gap: 1rem;
+            span {
+              background: #470b6ef9;
+              color: #c380efcc!important;
+              padding: 0.4rem 0.7rem;
+              border-radius: 20px;
+              font-size: 0.8rem;
+              font-weight: 500;
+            }
+          }
+        }
+      }
+    }
+  }
+}
