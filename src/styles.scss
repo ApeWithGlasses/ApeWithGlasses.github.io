@@ -312,7 +312,7 @@ footer {
   height: 1200px;
   border-radius: 50%;
   pointer-events: none;
-  background: radial-gradient(circle, rgba(255, 255, 255, 0.4), rgba(0, 0, 0, 0));
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0));
   backdrop-filter: blur(10px);
   transition: transform 0.1s, opacity 0.2s;
   transform: translate(-50%, -50%);
