@@ -16,7 +16,6 @@
     .experiences {
       margin-top: 5rem;
       place-content: center;
-      display: flex;
       &::after {
         content: '';
         position: fixed;
@@ -39,7 +38,7 @@
       .card a {
         cursor: pointer;
         display: flex;
-        width: 900px;
+        width: 100%;
         border: none;
         background-color: transparent;
         gap: 2rem;
@@ -61,12 +60,12 @@
 
         .date {
           color: var(--secondary);
-          width: 500px;
+          width: 14%;
         }
 
         .content {
+          max-width: 86%;
           text-align: left;
-
           h5 {
             color: var(--font-color);
             transition: all 300ms ease;
@@ -79,9 +78,12 @@
           }
 
           .technologies {
+            max-width: 100%;
             display: flex;
+            flex-wrap: wrap;
             gap: 1rem;
             span {
+              height: min-content;
               background: #470b6ef9;
               color: #c380efcc!important;
               padding: 0.4rem 0.7rem;
@@ -89,6 +91,21 @@
               font-size: 0.8rem;
               font-weight: 500;
             }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+@media all and (max-width: 920px) {
+  .experience {
+    .experience__section {
+      .experiences {
+        .card {
+          a {
+
           }
         }
       }
