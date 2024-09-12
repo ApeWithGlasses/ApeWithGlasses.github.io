@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { Works } from '@shared/models/works';
-import { NgIf } from '@angular/common';
 
 @Component({
   selector: 'app-works',
