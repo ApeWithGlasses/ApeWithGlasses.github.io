@@ -6,10 +6,10 @@
     <div class="works__section--grid">
       <a href={{work.url}} target="_blank" class="card" *ngFor="let work of works">
         <div class="title">{{work.title}}</div>
-        <p>{{work.desc}}</p>
+        <p>{{work.desc}} <a *ngIf="work.altLink" [href]="work.altLink">{{ work.altDescText }}</a> </p>
         <img [src]="work.img" [alt]="work.altText" [id]="work.imgId">
-        <div class="light__circle">
-          <img src="../../../../assets/icons/arrow-left-361-svgrepo-com.svg" alt="arrow icon">
+        <div class="technologies">
+          <span *ngFor="let tech of work.technologies">{{ tech }}</span>
         </div>
       </a>
     </div>

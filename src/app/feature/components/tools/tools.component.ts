@@ -48,5 +48,25 @@ export class ToolsComponent {
       title: 'Wordpress',
       altText: 'Wordpress Icon',
     },
+    {
+      img: 'https://res.cloudinary.com/dtux0itp7/image/upload/v1726168578/Tailwind_CSS_Logo.svg-min_ebadpz.png',
+      title: 'TailwindCSS',
+      altText: 'Tailwind Icon',
+    },
+    {
+      img: 'https://res.cloudinary.com/dtux0itp7/image/upload/v1726168646/nextjs-min_dxxjui.png',
+      title: 'NextJS',
+      altText: 'NextJS Icon',
+    },
+    {
+      img: 'https://res.cloudinary.com/dtux0itp7/image/upload/v1726168705/vercel-logo-F748E39008-seeklogo.com_ifruw4.png',
+      title: 'Vercel',
+      altText: 'Vercel Icon',
+    },
+    {
+      img: 'https://res.cloudinary.com/dtux0itp7/image/upload/v1726168793/azure-min_efgkab.png',
+      title: 'AzureDevops',
+      altText: 'Azure Icon',
+    },
   ];
 }
