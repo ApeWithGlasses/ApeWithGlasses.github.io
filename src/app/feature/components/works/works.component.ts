@@ -40,7 +40,7 @@ export class WorksComponent {
       title: 'Mariana Quintero Portfolio',
       url: 'https://mqa-portfolio.vercel.app/',
       desc: "Mariana Quintero's portfolio replicated from her",
-      altDescText: 'from her Figma design. ↗',
+      altDescText: 'Figma design. ↗',
       altLink:
         'https://www.figma.com/proto/xKOChr6IyiBmMJKcV5jyF5/P%C3%81GINA-WEB-MARIANA-QUINTERO-AGUDELO?node-id=3-171&node-type=FRAME&t=VP4hqU8a6yrrUWil-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=244%3A833&show-proto-sidebar=1',
       img: 'https://res.cloudinary.com/dtux0itp7/image/upload/v1726168090/mqa%20portfolio/121e3b37-cfa0-4ecd-8f37-f79700dcd8ac.png',
